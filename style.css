@@ -1,0 +1,194 @@
+* { 
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #E8E8E8;
+    flex-grow: 1;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile_img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.profile_name {
+    margin: 0;
+    font-weight: 900;
+}
+
+.date {
+    font-size: 0.7em;
+}
+
+.profile_info {
+    margin-left: 10px;
+}
+
+.card_img {
+    max-width: 100%;
+}
+
+.card_bottom {
+    display: flex;
+    border-top: 1px solid #E8E8E8 ;
+}
+
+.card_like_number {
+    margin-left: 10px;
+}
+
+.card_img_wrapper {
+    height: 300px;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card_caption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read_more_btn {
+    color: grey;
+}
+
+.read_more {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+}
+
+.liked {
+    filter: invert(41%) sepia(93%) saturate(3792%) hue-rotate(328deg) brightness(97%) contrast(102%);
+}
+
+#loadMoreBtn {
+    margin: 0 auto;
+    display: block;
+    padding:8px 15px;
+    font-size: 70%;
+    font-weight: 510;
+    letter-spacing:0.1em;
+    color: white;
+    background-color: rgb(0,129,255);
+    border: solid transparent 3px;
+    border-radius: 7%;
+}
+
+#loadMoreBtn:hover {
+    background-color: rgb(79, 104, 138);
+}
+
+.popup {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup_post {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    display: flex;
+}
+
+.popup_image {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popup_left {
+    width: 50%;
+    padding: 10px;
+}
+
+.popup_info {
+    margin-left: 10px;
+}
+
+.popup_info_wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 10px;
+}
+.popup_name {
+    font-weight: 900;;
+    margin: 0 0 5px 0;
+}
+
+.popup_date{
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.popup_logo {
+    margin-right: 10px;
+}
+
+.popup_profile_img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.popup_likes {
+    display: flex;
+}
+
+.popup_like_number {
+    margin-left: 10px;
+}
+
+.active {
+    display: flex;
+}
+
+.popup_inner_wrapper {
+    display: flex;
+    align-items: center;
+}
